@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmsk5odh43n6m"]
+
+[ext_resource type="Texture2D" uid="uid://5256u2ishvlm" path="res://jungle tileset.png" id="1_yjt17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypqmy"]
+size = Vector2(2276, 67)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(559.78125, 666)
+scale = Vector2(7.1360292, 1.9149996)
+texture = ExtResource("1_yjt17")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(158.80241, 3.1331615)
+scale = Vector2(0.9960328, 1.1135266)
+texture = ExtResource("1_yjt17")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1141, 611.5)
+shape = SubResource("RectangleShape2D_ypqmy")
+disabled = true
+one_way_collision = true

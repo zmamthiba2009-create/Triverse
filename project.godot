@@ -10,6 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Nouveau projet de jeu 2"
+config/name="Nouveau projet de jeu"
+run/main_scene="uid://dhrjgdodtih1a"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

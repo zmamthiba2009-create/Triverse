@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2111lkqjopws"]
+
+[ext_resource type="Texture2D" uid="uid://cyfrbnslq1c41" path="res://plx-1.png" id="1_xoild"]
+[ext_resource type="Texture2D" uid="uid://cxs0eda6gkg2r" path="res://plx-2.png" id="2_kwhg4"]
+[ext_resource type="Texture2D" uid="uid://beynrv3vigcut" path="res://plx-3.png" id="3_hy12d"]
+[ext_resource type="Texture2D" uid="uid://bnavdqge502tn" path="res://plx-4.png" id="4_m5fgl"]
+[ext_resource type="Texture2D" uid="uid://uxkcmsocbvhi" path="res://plx-5.png" id="5_4srxt"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Plx1" type="Sprite2D" parent="."]
+position = Vector2(577, 323.5)
+scale = Vector2(2.9947917, 2.9861112)
+texture = ExtResource("1_xoild")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(2, 2)
+scale = Vector2(3.002604, 3.0138893)
+texture = ExtResource("2_kwhg4")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(2, 2)
+scale = Vector2(3.002604, 3.0138893)
+texture = ExtResource("3_hy12d")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(2, 2)
+scale = Vector2(3.002604, 3.0138893)
+texture = ExtResource("4_m5fgl")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(2, 2)
+scale = Vector2(3.002604, 3.0138893)
+texture = ExtResource("5_4srxt")
+centered = false
